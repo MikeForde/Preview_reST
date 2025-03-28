@@ -3,6 +3,9 @@
   "displayName": "reST Preview",
   "description": "Preview reStructuredText files as HTML",
   "version": "0.0.1",
+  "author": "Mike Forde",
+  "publisher": "MikeForde",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.50.0"
   },
