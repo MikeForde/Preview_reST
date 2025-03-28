@@ -41,5 +41,9 @@
     "vscode": "^1.1.37",
     "@types/node": "^14.14.6",
     "@types/vscode": "^1.50.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MikeForde/Preview_reST.git"
   }
 }
