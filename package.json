@@ -1,0 +1,45 @@
+{
+  "name": "rst-preview",
+  "displayName": "reST Preview",
+  "description": "Preview reStructuredText files as HTML",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:restructuredtext",
+    "onCommand:rstPreview.showPreview"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "rstPreview.showPreview",
+        "title": "Preview reST",
+        "category": "Preview",
+        "icon": "$(open-preview)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "rstPreview.showPreview",
+          "when": "resourceLangId == restructuredtext",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ."
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3",
+    "vscode": "^1.1.37",
+    "@types/node": "^14.14.6",
+    "@types/vscode": "^1.50.0"
+  }
+}
